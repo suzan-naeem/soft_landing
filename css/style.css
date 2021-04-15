@@ -1,0 +1,625 @@
+/* Theme BackGround Color */
+
+.price .plan-price .plan .price-point button,
+.people .comments .list-point-click li.active,
+.header .content .info input[type="submit"],
+.contact-us .contact .form-control input[type="submit"],
+.footer .social li i:hover,
+#scrollTop {
+  background-color: var(--main-color)
+}
+
+/* Theme Color */
+
+.header .navbar .links li a:hover,
+.header .navbar .links li a.active,
+.header .scroll-selected .brand span,
+.contact-us .contact .form-control .asterisk {
+  color: var(--main-color)
+}
+
+/* Theme Float Left */
+
+.header .navbar .brand,
+.header .navbar .links,
+.header .navbar .mail,
+.features .images,
+.features .biolist,
+.about-us .person li,
+.people .images,
+.people .comments,
+.people .comments .block-div .info img,
+.people .comments .block-div .info span,
+.price .plan-price .plan,
+.price .plan-price .plan .price-point span,
+.footer .copyright {
+  float: left
+}
+
+/* Theme Color #fff */
+
+.header .navbar,
+.header .navbar .links li a,
+.header .content .info,
+.header .content .info input[type="submit"],
+.contact-us .contact .form-control input[type="submit"],
+.people .comments,
+.price .plan-price .plan .price-point button,
+.footer .social li i:hover,
+#scrollTop {
+  color: #fff
+}
+
+/* Theme Display Inline-Block */
+
+.header .navbar .links li,
+.features .listItem li,
+.about-us .person li,
+.people .comments .list-point-click li,
+.price .plan-price .plan .price-point span,
+.price .plan-price .plan .price-point button,
+.contact-us .contact .form-control input[type="submit"],
+.footer .social li,
+.price .plan-price .plan {
+  display: inline-block
+}
+
+/* Theme OverFlow Hidden */
+
+.header .navbar,
+.features,
+.about-us .person,
+.people,
+.people .comments .block-div .info,
+.price .plan-price,
+.price .plan-price .plan .price-point,
+.footer {
+  overflow: hidden
+}
+
+/* Theme Padding 100px */
+
+.features,
+.about-us,
+.people,
+.price,
+.contact-us {
+  padding: 100px 0
+}
+
+/* Theme UL */
+
+.features .listItem,
+.about-us .person,
+.people .comments .list-point-click,
+.price .plan-price .plan .listplan,
+.footer .social {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
+
+/* Start Global Rulze */
+:root {
+  --main-color: #eebb4d
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway'
+}
+
+.container {
+  width: 1170px;
+  margin: auto
+}
+
+/* Start Header */
+
+.header {
+  background: url('../img/baner01.jpg') fixed;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative
+}
+
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right,#292E49,#536976);
+  opacity: 0.8
+}
+
+/* navbar */
+
+.header .navbar {
+  padding: 15px 0 30px;
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2
+}
+
+.header .navbar .brand {
+  font-size: 25px;
+  width: 20%;
+  margin: 8px 0 0
+}
+
+.header .navbar .links {
+  padding: 0;
+  margin: 15px 0 0;
+  list-style: none;
+  width: 55%
+}
+
+.header .navbar .links li {
+  margin: 0 15px
+}
+
+.header .navbar .links li a {
+  text-decoration: none
+}
+
+.header .navbar .mail {
+  font-size: 18px;
+  width: 25%;
+  margin: 15px 0 0
+}
+
+.scroll-selected,
+.header .scroll-selected .brand,
+.header .scroll-selected .links li a,
+.header .scroll-selected .mail {
+  background-color: #fff;
+  color: #000
+}
+
+.scroll-selected {
+  box-shadow: 0 1px 30px rgba(0,0,0,0.1)
+}
+
+/* Content */
+
+.header .content {
+  position: relative;
+  z-index: 1
+}
+
+/* Info */
+
+.header .content .info {
+  text-align: center;
+  padding-top: 300px;
+  font-weight: bold
+}
+
+.header .content .info p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 4px
+}
+
+.header .content .info h1 {
+  text-transform: capitalize;
+  max-width: 650px;
+  line-height: 1.3;
+  margin: 0 auto 40px;
+  font-weight: normal;
+  font-size: 50px
+}
+
+.header .content .info .form-control {
+  position: relative
+}
+
+.header .content .info input[type="email"] {
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  outline: none;
+  width: 380px
+}
+
+.header .content .info input[type="email"]:focus::placeholder {
+  opacity: 0
+}
+
+.header .content .info input[type="submit"] {
+  padding: 8px 30px;
+  border-radius: 50px;
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  outline: none;
+  margin-left: -151px
+}
+
+.header .content .info input[type="submit"]:hover {
+  background-color: #000;
+  border: 1px solid #000
+}
+
+/* End Header */
+
+/* Start Features */
+
+.features .info {
+  margin-bottom: 30px
+}
+
+.features .info h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: normal
+}
+
+.features .listItem {
+  font-weight: bold
+}
+
+.features .listItem li {
+  margin-right: 25px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px
+}
+
+.features .listItem li:hover {
+  border-bottom: 2px solid var(--main-color);
+  padding-bottom: 5px
+}
+
+.features .listItem li.active {
+  border-bottom: 2px solid var(--main-color);
+  padding-bottom: 5px
+}
+
+.features .biolist {
+  margin-top: 30px;
+  width: 50%
+}
+
+.features .biolist > div:not(.tap-one) {
+  display: none
+}
+
+.features .biolist h3 {
+  font-size: 25px;
+  font-weight: normal
+}
+
+.features .biolist p {
+  line-height: 1.7
+}
+
+.features .images {
+  width: 50%;
+  margin: 0;
+  padding: 0
+}
+
+.features .images img {
+  max-width: 100%
+}
+
+/* End Features */
+
+/* Start About Us */
+
+.about-us {
+  background-color: #f9f9f9
+}
+
+.about-us .info {
+  text-align: center;
+  margin-bottom: 25px
+}
+
+.about-us .info h1 {
+  font-weight: normal;
+  margin: 0 0 15px;
+  word-spacing: 10px
+}
+
+.about-us .person li {
+  width: 33.3333333%
+}
+
+.about-us .person li .caption {
+  padding: 20px;
+  background-color: #fff;
+  position: relative
+}
+
+.about-us .person li .caption:after {
+  content: '';
+  display: block;
+  border-color: transparent transparent #fff transparent;
+  border-style: solid;
+  border-width: 25px;
+  position: absolute;
+  top: -50px;
+  left: 41%
+}
+
+.about-us .person li:nth-child(2) .caption {
+  padding: 20px;
+  background-color: #fff;
+  position: relative
+}
+
+.about-us .person li:nth-child(2) .caption:after {
+  content: '';
+  display: block;
+  border-color: #fff transparent transparent transparent ;
+  border-style: solid;
+  border-width: 25px;
+  position: absolute;
+  top: 197px;
+  left: 44%
+}
+
+.about-us .person li .caption h3 {
+  margin: 10px 0
+}
+
+.about-us .person li .caption h5 {
+  margin: 0
+}
+
+.about-us .person li .caption p {
+  line-height: 1.6;
+  font-size: 15px
+}
+
+.about-us .person li img {
+  max-width: 100%;
+  display: block
+}
+
+/* End About Us */
+
+/* Start Testmoniales */
+
+.people .images {
+  width: 50%
+}
+
+.people .images img {
+  max-width: 100%
+}
+
+.people .comments {
+  width: 50%;
+  background-color: #000;
+  padding: 25px 50px;
+  height: 390px
+}
+
+.people .comments h2 {
+  font-size: 35px;
+  font-weight: normal;
+  margin: 20px 0
+}
+
+.people .comments .block-div p {
+  line-height: 1.5;
+  font-style: italic;
+  font-size: 19px
+}
+
+.people .comments .block-div > div:not(.pragraph-one) {
+  display: none
+}
+
+.people .comments .block-div .info img {
+  border: 3px solid var(--main-color);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px
+}
+
+.people .comments .block-div .info span {
+  font-weight: bold;
+  line-height: 80px;
+  margin-left: 15px
+}
+
+.people .comments .list-point-click {
+  text-align: center
+}
+
+.people .comments .list-point-click li {
+  background-color: #e2e2f9;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 75px 2px 0
+}
+
+/* End Testmoniales */
+
+/* Start Pricing */
+
+.price {
+  background-color: #f9f9f9
+}
+
+.price .info {
+  margin: 0 0 50px
+}
+
+.price .info h2 {
+  font-weight: normal;
+  font-size: 35px;
+  text-align: center;
+  word-spacing: 5px;
+  margin: 0
+}
+
+.price .plan-price .plan {
+  width: 33.3333%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-right: 2px solid var(--main-color)
+}
+
+.price .plan-price .plan:last-child {
+  border-right: 0
+}
+
+.price .plan-price .plan h2 {
+  margin: 0;
+  padding: 25px 0;
+  border-bottom: 2px solid var(--main-color)
+}
+
+.price .plan-price .plan .listplan {
+  margin: 25px 0;
+  border-bottom: 2px solid var(--main-color)
+}
+
+.price .plan-price .plan .listplan li {
+  color: #777;
+  margin: 20px 0;
+  font-weight: bold
+}
+
+.price .plan-price .plan .price-point span {
+  font-weight: bold;
+  line-height: 40px
+}
+
+.price .plan-price .plan .price-point button {
+  float: right;
+  padding: 10px 15px;
+  border: 1px solid var(--main-color);
+  outline: none;
+  border-radius: 50px;
+  cursor:pointer;
+  transition: .7s
+}
+
+.price .plan-price .plan .price-point button:hover,
+.contact-us .contact .form-control input[type="submit"]:hover {
+  background-color: #000;
+  border: 1px solid #000
+}
+
+/* End Pricing */
+
+/* Start Contact Us */
+
+.contact-us {
+  background-color: #fff;
+  text-align: center
+}
+
+.contact-us .info {
+  margin: 0 0 20px
+}
+
+.contact-us .info h2 {
+  font-weight: normal;
+  font-size: 35px;
+  word-spacing: 5px;
+  margin: 0
+}
+
+.contact-us .contact .form-control {
+  display: block;
+  margin: 15px 0
+}
+
+.contact-us .contact .form-control input:not([type="submit"]),
+.contact-us .contact .form-control textarea {
+  width: 60%;
+  padding: 10px 10px;
+  border: 2px solid #ddd;
+  outline: none;
+  border-radius: 5px
+}
+
+.contact-us .contact .form-control input:not([type="submit"]):focus::placeholder,
+.contact-us .contact .form-control textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.contact-us .contact .form-control textarea {
+  height: 180px;
+  resize: none;
+  outline: none
+}
+
+.contact-us .contact .form-control input[type="submit"] {
+  padding: 10px 15px;
+  border: 1px solid var(--main-color);
+  outline: none;
+  border-radius: 50px;
+  cursor:pointer;
+  transition: .7s;
+  width: 20%
+}
+
+/* End Contact Us */
+
+/* Start Footer */
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 10px 0
+}
+
+.footer .copyright p {
+  margin: 0;
+  line-height: 30px
+}
+
+.footer .social {
+  float: right
+}
+
+.footer .social li {
+  margin: 0 3px;
+  cursor: pointer
+}
+
+.footer .social li i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid transparent
+}
+
+.footer .social li i:hover {
+  border: 2px solid var(--main-color)
+}
+
+/* End Footer */
+
+/* Start ScrollTop */
+
+#scrollTop {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 5
+}
+
+/* End ScrollTop */
